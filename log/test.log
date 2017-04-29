@@ -1,0 +1,35 @@
+2017-04-29 08:50:13,072 INFO test_sortArray started. 
+2017-04-29 08:50:13,072 INFO test_sortArray completed successfully. 
+2017-04-29 08:50:13,072 INFO test_sortArray_incorrect_inputs started. 
+2017-04-29 08:50:13,085 INFO test_sortArray_incorrect_inputs completed successfully. 
+2017-04-29 08:50:13,085 INFO test_sort_huge_array started. 
+2017-04-29 08:50:13,094 INFO test_sort_huge_array completed successfully. 
+2017-04-29 08:50:13,096 INFO test_sort_should_not_be_called started. 
+2017-04-29 08:50:13,101 INFO test_sort_should_not_be_called completed successfully. 
+2017-04-29 08:50:13,101 INFO test_sort started. 
+2017-04-29 08:50:13,101 INFO test_sort completed successfully. 
+2017-04-29 08:50:13,101 INFO test_sort_huge_array started. 
+2017-04-29 08:50:30,217 INFO test_sort_huge_array completed successfully. 
+2017-04-29 08:50:30,220 INFO test_sort_incorrect_inputs started. 
+2017-04-29 08:50:30,224 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:30,228 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:30,232 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:30,232 INFO test_sort_incorrect_inputs completed successfully. 
+2017-04-29 08:50:30,232 INFO test_sort started. 
+2017-04-29 08:50:30,232 INFO test_sort completed successfully. 
+2017-04-29 08:50:30,232 INFO test_sort_huge_array started. 
+2017-04-29 08:50:34,870 INFO test_sort_huge_array completed successfully. 
+2017-04-29 08:50:34,872 INFO test_sort_incorrect_inputs started. 
+2017-04-29 08:50:34,877 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:34,881 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:34,885 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:34,886 INFO test_sort_incorrect_inputs completed successfully. 
+2017-04-29 08:50:34,886 INFO test_sort started. 
+2017-04-29 08:50:34,886 INFO test_sort completed successfully. 
+2017-04-29 08:50:34,886 INFO test_sort_huge_array started. 
+2017-04-29 08:50:34,979 INFO test_sort_huge_array completed successfully. 
+2017-04-29 08:50:34,982 INFO test_sort_incorrect_inputs started. 
+2017-04-29 08:50:34,986 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:34,991 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:34,994 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:50:34,995 INFO test_sort_incorrect_inputs completed successfully. 

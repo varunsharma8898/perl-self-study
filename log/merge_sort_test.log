@@ -1,0 +1,9 @@
+2017-04-29 08:55:28,255 INFO test_sort started. 
+2017-04-29 08:55:28,255 INFO test_sort completed successfully. 
+2017-04-29 08:55:28,255 INFO test_sort_huge_array started. 
+2017-04-29 08:55:28,350 INFO test_sort_huge_array completed successfully. 
+2017-04-29 08:55:28,353 INFO test_sort_incorrect_inputs started. 
+2017-04-29 08:55:28,357 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:55:28,361 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:55:28,365 FATAL Incorrect input, arrayref expected. 
+2017-04-29 08:55:28,365 INFO test_sort_incorrect_inputs completed successfully. 

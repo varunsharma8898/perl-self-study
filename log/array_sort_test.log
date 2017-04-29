@@ -1,0 +1,8 @@
+2017-04-29 08:47:59,707 INFO test_sortArray started. 
+2017-04-29 08:47:59,707 INFO test_sortArray completed successfully. 
+2017-04-29 08:47:59,708 INFO test_sortArray_incorrect_inputs started. 
+2017-04-29 08:47:59,720 INFO test_sortArray_incorrect_inputs completed successfully. 
+2017-04-29 08:47:59,720 INFO test_sort_huge_array started. 
+2017-04-29 08:47:59,728 INFO test_sort_huge_array completed successfully. 
+2017-04-29 08:47:59,730 INFO test_sort_should_not_be_called started. 
+2017-04-29 08:47:59,734 INFO test_sort_should_not_be_called completed successfully. 
