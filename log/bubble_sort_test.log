@@ -1,9 +1,9 @@
-2017-04-29 08:48:04,395 INFO test_sort started. 
-2017-04-29 08:48:04,395 INFO test_sort completed successfully. 
-2017-04-29 08:48:04,395 INFO test_sort_huge_array started. 
-2017-04-29 08:48:20,973 INFO test_sort_huge_array completed successfully. 
-2017-04-29 08:48:20,975 INFO test_sort_incorrect_inputs started. 
-2017-04-29 08:48:20,979 FATAL Incorrect input, arrayref expected. 
-2017-04-29 08:48:20,983 FATAL Incorrect input, arrayref expected. 
-2017-04-29 08:48:20,987 FATAL Incorrect input, arrayref expected. 
-2017-04-29 08:48:20,988 INFO test_sort_incorrect_inputs completed successfully. 
+2017-05-16 14:59:06,955 INFO test_sort started. 
+2017-05-16 14:59:06,955 INFO test_sort completed successfully. 
+2017-05-16 14:59:06,955 INFO test_sort_huge_array started. 
+2017-05-16 14:59:24,433 INFO test_sort_huge_array completed successfully. 
+2017-05-16 14:59:24,436 INFO test_sort_incorrect_inputs started. 
+2017-05-16 14:59:24,440 FATAL Incorrect input, arrayref expected. 
+2017-05-16 14:59:24,444 FATAL Incorrect input, arrayref expected. 
+2017-05-16 14:59:24,448 FATAL Incorrect input, arrayref expected. 
+2017-05-16 14:59:24,449 INFO test_sort_incorrect_inputs completed successfully. 

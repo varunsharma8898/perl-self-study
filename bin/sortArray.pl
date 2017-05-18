@@ -5,6 +5,7 @@ no warnings ('uninitialized', 'experimental::smartmatch');
 
 use lib 'lib';
 
+use ArraySortFactory;
 use Benchmark;
 use Data::Dumper;
 use Getopt::Long;
@@ -26,7 +27,7 @@ Usage() && exit if ($options->{help});
 Usage() && exit if (!$options->{array} && !$options->{random});
 Usage() && exit if (
 	!$options->{algo}
-	|| $options->{algo} !~ /(merge|insertion|bubble)/i
+	|| $options->{algo} !~ /(merge|insertion|bubble|heap|quick)/i
 );
 
 $options->{algo} = lc $options->{algo};
@@ -37,31 +38,12 @@ if ($options->{array}) {
 	@array = map { int($_) } split(/,/, $options->{array});
 }
 else {
-	for (0 .. $options->{random}) {
+	for (1 .. $options->{random}) {
 		push @array, int(rand(10000));
 	}
 }
 
-###########################################################
-# TODO: This should be ideally moved to a factory class.
-my $sortObj;
-if ($options->{algo} eq 'merge') {
-	require ArraySort::MergeSort;
-	$sortObj = ArraySort::MergeSort->new();
-}
-elsif ($options->{algo} eq 'insertion') {
-	require ArraySort::InsertionSort;
-	$sortObj = ArraySort::InsertionSort->new();
-}
-elsif ($options->{algo} eq 'bubble') {
-	require ArraySort::BubbleSort;
-	$sortObj = ArraySort::BubbleSort->new();
-}
-else {
-	require ArraySort::ArraySort;
-	$sortObj = ArraySort::ArraySort->new();
-}
-###########################################################
+my $sortObj     = ArraySortFactory->createArraySorter($options);
 
 my $start       = Benchmark->new();
 my $sortedArray = $sortObj->sort(\@array);
@@ -91,11 +73,11 @@ print "\nTime: " . timestr($td) . "\n";
 sub Usage {
 	my ($msg) = @_;
 	print $msg . qq{
-	$0 <your-stuff> --help
+$0 --algo=<algo> --random=100
 	Options:
 	--help   : Usage
 	--algo   : Algorithm to use to sort
-	           Possible vals: merge/insertion/bubble
+	           Possible vals: merge/insertion/bubble/heap/quick
 	--array  : Comma-separated list
 	--random : Number of random elements generated and sorted
 	           One of --array or --random is required.

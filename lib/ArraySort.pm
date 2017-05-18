@@ -8,7 +8,7 @@ use strict;
 use warnings;
 no warnings 'uninitialized';
 
-use Carp qw(carp croak);;
+use Carp qw(carp croak);
 use Log::Log4perl;
 
 ################################################################################

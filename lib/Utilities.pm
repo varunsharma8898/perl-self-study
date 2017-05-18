@@ -13,12 +13,9 @@ use base qw(Exporter);
 ## no critic (ProhibitAutomaticExportation)
 our @EXPORT = qw(
 	ArrayDifference
-	InList
-	GetHTMLFooter
-	GetHTMLHeader
 	GetStackTrace
 	GetTotalTimeSpent
-	PrintContentTypeHeader
+	InList
 	TrimWhitespace
 	Unindent
 	UniqueElements
@@ -233,91 +230,6 @@ sub TrimWhitespace {
 sub GetTotalTimeSpent {
 	my ($args) = @_;
 	return time - $^T;
-}
-
-###############################################################################
-# GetTotalTimeSpent:
-#	Returns the total time spent in seconds (including compile time) since the 
-#	beginning of the script till the call to this sub.
-#
-# Usage:
-#	print GetTotalTimeSpent();
-#
-# Args:
-#	None.
-#
-# Side Effects:
-#	None.
-# 
-# Returns:
-#	A string - time in seconds.
-###############################################################################
-sub GetHTMLHeader {
-	my ($args) = @_;
-
-	my ($meta, $css, $script);
-
-	if (scalar @{$args->{META} || []}) {
-		$meta = join "\n", @{$args->{META}};
-	}
-
-	if (scalar @{$args->{CSS} || []}) {
-		$css = join "\n", map { qq{<link rel="stylesheet" href="$_">} } @{$args->{CSS}};
-	}
-
-	if (scalar @{$args->{SCRIPT} || {}}) {
-		$script = join "\n", map { qq{<script src="$_"></script>} } @{$args->{SCRIPT}};
-	}
-
-	my $returnValue = sprintf(
-		qq{
-			<!DOCTYPE html>
-			<html lang="en">
-			<head>
-				<title>%s</title>
-				%s
-				%s
-				%s
-			</head>
-			<body>
-		},
-		$args->{TITLE},
-		$meta,
-		$css,
-		$script
-	);
-
-	return Unindent($returnValue);
-}
-
-###############################################################################
-# GetTotalTimeSpent:
-#	Returns the total time spent in seconds (including compile time) since the 
-#	beginning of the script till the call to this sub.
-#
-# Usage:
-#	print GetTotalTimeSpent();
-#
-# Args:
-#	None.
-#
-# Side Effects:
-#	None.
-# 
-# Returns:
-#	A string - time in seconds.
-###############################################################################
-sub GetHTMLFooter {
-	my ($args) = @_;
-	return Unindent(qq{
-		</body>
-		</html>
-	});
-}
-
-
-sub PrintContentTypeHeader {
-	print "Content-type: text/html\n\n";
 }
 
 1;
